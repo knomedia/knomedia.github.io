@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: c | nothing yet | knomedia]]></title>
+  <link href="http://knomedia.github.io/blog/categories/c/atom.xml" rel="self"/>
+  <link href="http://knomedia.github.io/"/>
+  <updated>2013-09-28T18:05:08-06:00</updated>
+  <id>http://knomedia.github.io/</id>
+  <author>
+    <name><![CDATA[Jason Madsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Introducing yesman]]></title>
+    <link href="http://knomedia.github.io/blog/2012/11/26/introducing-yesman/"/>
+    <updated>2012-11-26T12:55:00-07:00</updated>
+    <id>http://knomedia.github.io/blog/2012/11/26/introducing-yesman</id>
+    <content type="html"><![CDATA[<p>My quest to go all-in with vim continues to make progress. This progress was held up a bit with my recent work on C++ within the university. With all the cruft that surrounds C++ development a full featured IDE seemed tempting. So over the Thanksgiving break I spent some time working on yesman (available at <a href="https://github.com/knomedia/yesman">GitHub</a>). Yesman is a command line application that will create and manage your C++ projects including unit testing. It will create a project, download and compile <a href="http://code.google.com/p/googletest/">Google Test</a>, and help you stub out C++ classes, headers and testing fixtures.</p>
+
+
+
+
+<div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
+  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_poster.png' width='700' height='437' >
+    <source src='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_introduction.mp4' type='video/mp4' />
+  </video>
+</div>
+
+
+
+
+<p>It is not quite finished. Future versions of yesman will include a system that allows you to build your c++ project through yesman using a managed make build process. Feel free to fork, tweak give feedback at the <a href="https://github.com/knomedia/yesman">GitHub repo</a></p>
+
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Using Google Test Framework]]></title>
+    <link href="http://knomedia.github.io/blog/2012/11/16/using-google-test-framework/"/>
+    <updated>2012-11-16T11:35:00-07:00</updated>
+    <id>http://knomedia.github.io/blog/2012/11/16/using-google-test-framework</id>
+    <content type="html"><![CDATA[<p>I've been sharpening up the C++ lately. I have found it interesting that there does not seem to be a de-facto unit testing library. There are <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#C.2B.2B">plenty of options</a> to choose from. I have decided to run with <a href="http://code.google.com/p/googletest/">Google Test</a> if for no other reason than it seems to be somewhat active and updated. I put together a quick pair of screen casts that walk through getting started with Google Test. I'm using a Mac running Lion (10.8.2) at this time, but believe these directions should be the same for most linux builds.</p>
+
+
+
+
+<p>Enjoy</p>
+
+
+
+
+<h3>Downloading and compiling Google Test</h3>
+
+
+
+
+<iframe src="http://player.vimeo.com/video/53690757?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/53690757">Compiling the Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+
+<h3>Using Google Test</h3>
+
+
+
+
+<iframe src="http://player.vimeo.com/video/53690756?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="401" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/53690756">Using Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+]]></content>
+  </entry>
+  
+</feed>

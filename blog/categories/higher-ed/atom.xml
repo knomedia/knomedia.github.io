@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: higher-ed | nothing yet | knomedia]]></title>
+  <link href="http://knomedia.github.io/blog/categories/higher-ed/atom.xml" rel="self"/>
+  <link href="http://knomedia.github.io/"/>
+  <updated>2013-09-28T18:05:08-06:00</updated>
+  <id>http://knomedia.github.io/</id>
+  <author>
+    <name><![CDATA[Jason Madsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Balancing Higher Ed and Craftsmanship]]></title>
+    <link href="http://knomedia.github.io/blog/2012/11/12/balancing-higher-ed-and-craftsmanship/"/>
+    <updated>2012-11-12T13:28:00-07:00</updated>
+    <id>http://knomedia.github.io/blog/2012/11/12/balancing-higher-ed-and-craftsmanship</id>
+    <content type="html"><![CDATA[<p>It&rsquo;s no secret that I have arranged some things in my life to go back to school while continuing to work full time as a remote developer. I am quite grateful for the opportunity to do so. It was no small effort. I have a wonderful wife and a flexible work situation that have made it possible. Generally, when I explain to folks that I am going back to school, I am greeted with an interesting look and a simple question &ldquo;Why?&rdquo;. It is a completely valid question.</p>
+
+<p>Most of my programming understanding has come through books, reading, and most importantly watching and doing. I&rsquo;ve made plenty of mistakes over the years and I believe I have learned a good deal from them. I have gone through what I believe is the typical back-and-forth of &ldquo;I&rsquo;m a pretty good programmer&rdquo;, to &ldquo;I&rsquo;m an idiot&rdquo;, and then back. When the opportunity to dedicate a substantial amount of time towards becoming a better programmer arose, I took it. I am too much of a realist (hopefully not too cynical) to believe that somehow putting forth effort in a traditional computer science program will somehow transform me into a software craftsman. I do however believe that in higher education we should be promoting the same values that the craftsman holds true. More on this in a minute.</p>
+
+<p>This morning I walked through the 18 degree Fahrenheit snow and ice to get to campus. As I often do, I was listening to a podcast during my walk. In this case it was the <a title="Ruby Rogues episode 78" href="http://rubyrogues.com/078-rr-hexagonal-rails-with-matt-wynne-and-kevin-rutherford/" target="_blank">Ruby Rogues episode 78</a> . (As a quick aside, I really like the Ruby Rogues. It is informative and funny with just the right amount geek. Whether you write Ruby or not, it is a great podcast for web developers.) Anyway, so in this episode they are talking about Hexagonal Rails applications. They get into a small geek spat over the approach and the Active Record pattern as a whole (geek spats are perfectly healthy in my opinion). The discussion lead me off on a mental tangent about craftsmanship. One of the main attractors for me to the Ruby world is, what from my perspective feels like, a community effort to lift the craftsmanship level of the community. I realize that there are plenty of folks writing bad Ruby as well. Heck, when I look back at code I&rsquo;ve written I feel like I&rsquo;m one of them! By in large however, I feel that the Ruby community embraces this notion of software craftsmanship.</p>
+
+<p>So back to my current situation. I am sitting through a few CS undergrad courses in order for the university to admit me into the post-graduate Computer Science program (my current under-grad degree is in Art &amp; Design which &ldquo;no worky&rdquo; for the university&hellip;). I am learning a lot. So far it is mainly low level stuff that most pretend to get, but often have never really done. I&rsquo;m writing assembly (which I&rsquo;m convinced is good only as a rite-of-passage). I&rsquo;m building the classical data structures (stacks, queues, trees, maps etc). Truthfully, it is a blast. The material isn&rsquo;t overly complicated. The professors do a decent job. It is fun&hellip; in a nerdy way. But it isn&rsquo;t perfect. There is something missing. Craftsmanship and passion for writing good software is difficult to find in higher education. Don&rsquo;t get me wrong. There is passion and well intentioned professors who are putting forth their best effort. Generally however, the passion seems pedantically focused on minutia that typically feels irrelevant to the objective of building great software.</p>
+
+<p>I think this craftsmanship gap is easy to fall into for academics. When you only discuss concepts for 50 minutes a day, three days a week, it becomes difficult to incorporate. Furthermore, in such a setting you are rarely ever forced to maintain or update your code, as such the need for well designed interactions fades. If the software you are writing never reaches a particular scale, as is often the case in under grad classrooms, it is an easy trap to fall into where you begin to question what value there is in design, unit testing, TDD, code reviews, peer programming, etc. As such you rarely hear about such things. Such things are relegated to a quick discussion of &ldquo;you may hear of these things after graduation&rdquo;. This is a mistake. I understand that in most higher education settings your input is a group of students who may have never programmed. I also recognize how difficult teaching programming to a blank slate can be (I had the privilege of teaching introductory OO concepts for several years at a private university). By not instilling a sense of passion about the quality of code a student writes, we are setting students down the wrong path. A path were the only metric of code quality becomes if the program &ldquo;works&rdquo;, is a path of re-living the mistakes of decades worth of experience of prior developers. There must be a balance between classical classroom theory and pragmatic battle tested approach and design.</p>
+
+<p>This isn&rsquo;t a new dilemma. The difference in approach between the apprentice and classically educated has been around for some time. I find it interesting that as a society we have yet to recognize the need for a dual headed approach. An approach in which we blend the real world nature of the apprentice with the theory of the classroom clearly has merit. Yet, as is often the case, we seem to divide off into our two corners of the world to assume there is no merit in the other approach. Hopefully someday we will figure out how to balance these two approaches. Both have a measure of validity along with numbers to show their success.</p>
+
+<p>So people do indeed ask why I&rsquo;m going back to school. Truthfully I am doing it to ensure that I have experienced both approaches. I believe that the systems we use and design will only get more complicated. I don&rsquo;t believe that I&rsquo;ll get everything I need from a classic education. I am hoping to balance a life&rsquo;s worth of lessons, passion, and attempts at craftsmanship with the theory and low level understanding of classical computer science.</p>
+]]></content>
+  </entry>
+  
+</feed>

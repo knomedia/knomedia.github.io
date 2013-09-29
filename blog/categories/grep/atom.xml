@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: grep | nothing yet | knomedia]]></title>
+  <link href="http://knomedia.github.io/blog/categories/grep/atom.xml" rel="self"/>
+  <link href="http://knomedia.github.io/"/>
+  <updated>2013-09-28T18:05:08-06:00</updated>
+  <id>http://knomedia.github.io/</id>
+  <author>
+    <name><![CDATA[Jason Madsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[grep exclude directory]]></title>
+    <link href="http://knomedia.github.io/blog/2013/05/31/grep-exclude-directory/"/>
+    <updated>2013-05-31T13:47:00-06:00</updated>
+    <id>http://knomedia.github.io/blog/2013/05/31/grep-exclude-directory</id>
+    <content type="html"><![CDATA[<p>This is more as a reference for me than anything. I cannot seem to ever remember how to exclude a directory when doing a recursive grep so here we go:</p>
+
+<pre>
+<code>
+grep /some_pattern/ /search/path -irn --exclude-dir=log --color
+</code>
+</pre>
+
+
+<p>-i => case insensitive
+-r => recursive
+-n => show line number
+&mdash;color => highlight the match
+&mdash;exclude-dir => don&rsquo;t search in this path</p>
+
+<p>For multiple excludes use &mdash;exclude-dir={dir1,dir2}</p>
+
+<p>I&rsquo;m mostly hoping that the act of typing this out will help it stick. Perhaps it&rsquo;ll help you as well.</p>
+]]></content>
+  </entry>
+  
+</feed>

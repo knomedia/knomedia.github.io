@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: java | nothing yet | knomedia]]></title>
+  <link href="http://knomedia.github.io/blog/categories/java/atom.xml" rel="self"/>
+  <link href="http://knomedia.github.io/"/>
+  <updated>2013-09-28T18:05:08-06:00</updated>
+  <id>http://knomedia.github.io/</id>
+  <author>
+    <name><![CDATA[Jason Madsen]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[javantas for quick java projects]]></title>
+    <link href="http://knomedia.github.io/blog/2013/01/16/javantas-for-quick-java-projects/"/>
+    <updated>2013-01-16T21:38:00-07:00</updated>
+    <id>http://knomedia.github.io/blog/2013/01/16/javantas-for-quick-java-projects</id>
+    <content type="html"><![CDATA[<p>In the not so distant past I made a decision that I wanted to really force myself to get overly comfortable and proficient with vim. I took the plunge. I had a tough time at first, but as I look back, I&rsquo;m really glad I did it. I really enjoy vim. I realize there are other great options as well. I&rsquo;m not against others having their opinions on editors (or even IDE&rsquo;s for that matter). But for me, I&rsquo;m glad I made the jump.</p>
+
+<p>I&rsquo;ve started in on a course that is requiring us to write Java. The natural choice then is to go back to using Eclipse. I&rsquo;m really comfortable with Eclipse, and recognize the power that it brings. But&hellip; I keep believing that I can get it all done just as quickly using the shell and vim. Add in <a href="https://github.com/msanders/snipmate.vim">snipmate</a>, <a href="https://github.com/wincent/Command-T">Command T</a> and the ability to write some shell scripts, and I think I&rsquo;ll be happy sticking with vim.</p>
+
+<p>So this afternoon I took some time to build <a href="https://github.com/knomedia/javantas">javantas</a> a shell script that handles some of the cruft of starting a small java project.</p>
+
+<div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
+  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2013/01/javantas_intro.jpg' width='700' height='525' >
+    <source src='http://knomedia.com/blog/wp-content/uploads/2013/01/javantas_intro.mp4' type='video/mp4' />
+  </video>
+</div>
+
+
+<p>Give it a spin from the <a href="https://github.com/knomedia/javantas">Github Repo</a>.</p>
+]]></content>
+  </entry>
+  
+</feed>

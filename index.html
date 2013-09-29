@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
-  <meta name="author" content="Your Name">
+  <title>nothing yet | knomedia</title>
+  <meta name="author" content="Jason Madsen">
 
   
-  <meta name="description" content=" Blog Archives Recent Posts ">
+  <meta name="description" content="I really enjoy listening to good podcasts (lately I&#8217;ve been listening to Ruby Rogues and JavaScript Jabber a lot), or watching good screencasts &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -21,7 +21,7 @@
   <link rel="canonical" href="http://knomedia.github.io">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="My Octopress Blog" type="application/atom+xml">
+  <link href="/atom.xml" rel="alternate" title="nothing yet | knomedia" type="application/atom+xml">
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
@@ -36,9 +36,9 @@
 
 <body   >
   <header role="banner"><hgroup>
-  <h1><a href="/">My Octopress Blog</a></h1>
+  <h1><a href="/">nothing yet | knomedia</a></h1>
   
-    <h2>A blogging framework for hackers.</h2>
+    <h2>Occasional thoughts, musings and otherwise</h2>
   
 </hgroup>
 
@@ -66,6 +66,655 @@
       <div class="blog-index">
   
   
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/09/28/capturing-good-audio/">Capturing Good Audio</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-09-28T13:19:00-06:00" pubdate data-updated="true">Sep 28<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I really enjoy listening to good podcasts (lately I&#8217;ve been listening to <a href="http://rubyrogues.com/">Ruby Rogues</a> and <a href="http://javascriptjabber.com/">JavaScript Jabber</a> a lot), or watching good screencasts. Over the years while teaching at a university I have recorded, and re-recorded hours and hours worth of videos for students to use as reference material. While these days I mostly hang out with tech geeks, there was a former life in which I lived in L.A. and worked as a recording engineer. In my life I have had access to some of the greatest recording gear the world has thus far produced. I&#8217;ve also worked on budget projects at home that turned out sounding great. I thought (with a little nudging from <a href="http://twitter.com/#!/olivierlacan/status/207303724710895616">@olivierlacan</a>) that I should write up a bit about getting great audio for your podcast, screencast, video, etc.</p>
+
+
+
+
+<p>There are, in my book, four elements to getting great sounds recorded&#8230; Audio Source, Environment, Input and Levels. In this post I&#8217;ll describe a little about each and hopefully set you on your way to audio recording bliss.</p>
+
+
+
+
+<h2 id="audiosource">Audio Source</h2>
+
+
+
+
+<p>In the audio engineering world, great detail is placed on the actual instrument. Have a $50 beat up piano, but hoping to make it sound like a <a href="http://www.steinway.com/">Steinway</a>? Good luck. No audio engineering trick is going to fix that. So you have to start with good sound. In the case of a screencast or podcast that means your voice. Not a whole lot you&#8217;ll be able to do there other than perhaps some vocal exercise. Try not to record just after eating. As odd as it sounds, I also try to stay away from soda while recording. Ever listen to a podcast where someone obviously needed to clear their throat but hadn&#8217;t? Not fun.</p>
+
+
+
+
+<h2 id="environment">Environment</h2>
+
+
+
+
+<p>The room in which you record will have almost as much impact on the way you sound as your voice itself. Consider what it would sound like if you were recording in your high school gymnasium. Lots of echoes. In fact in something akin to a gymnasium, it is often difficult to understand each word as the echo from the room can be almost as loud as your voice. Every room, outside of really expensive acoustically treated rooms for science, has a sound signature. It is the way the room bounces sound around. Even expensive recording studios have a sound. In fact, it is generally on purpose. Rooms that have no sound reverberation make us slightly uncomfortable. This means that your office, bedroom, closet or where-ever you are going to record has some sound. Consider it&#8217;s effects on your voice. For vocal recordings, you want as little reverberation as possible. If you are serious about recording audio, I would consider some <a href="http://www.auralex.com/">acoustical foam</a>.</p>
+
+
+
+
+<p>[Side note&#8230; this acoustical treatment stuff is impossible to take down if you &#8220;glue&#8221; it to the wall the way most manufacturers suggest. I built some small frames to mount it in, and then hung the frames on my wall. Much more transportable, and didn&#8217;t demolish my wall.]</p>
+
+
+
+
+<p>If you are not invested enough to put up actual acoustic treatment, consider the amount of hard surfaces in the room. Sounds, especially at the frequency of the human voice, bounces off of hard surfaces quite effectively. Cover hard surfaces with blankets, the thicker the better. At one point in my life I leaned the bed mattress up against the wall to better cover the wall&#8217;s hard surfaces. Cover as much of the walls as possible. This won&#8217;t make a great recording studio, but for podcasts it will help quite a bit.</p>
+
+
+
+
+<p>Consider any noises that will occur in the room. Is the Air Conditioner blowing? Are there fans running? Get rid of any noise that you can. There is a point of diminishing returns with this. If you want to see just how much sound there is, try recording a few seconds of you sitting silent in front of your microphone and then insert a second of silence in between using your favorite audio editor. You&#8217;ll hear all of those background noises disappear and then come back.</p>
+
+
+
+
+<h2 id="input">Input</h2>
+
+
+
+
+<p>Something has to convert the acoustical sound pressure of your voice to an electric signal. This is technically known as a transducer, and more specifically known as a microphone. The analog electric signal from the microphone then needs to be converted to a digital signal (Analog-to-Digital Conversion or ADC for short) that can be captured by your computer (or other fancy digital recorder). These are two individual processes that need to occur. What I&#8217;m really talking about here is a microphone and a way to digitize it.</p>
+
+
+
+
+<p>You will read lots of advice online about using a USB microphone as it does both the transduction and ADC work in the same device. Just plug it in and you are off. I disagree. I really disagree. More on that in the levels section later. Headset microphones and other really, really convenient things don&#8217;t generally sound so good. You will want to believe that it doesn&#8217;t sound &#8220;too bad&#8221;, but you will be wrong. You&#8217;ll come to realize that you were wrong after investing way too much time recording stuff that eventually you&#8217;ll wish you hadn&#8217;t. If you want professional sounding results, you will need somewhat professional gear.</p>
+
+
+
+
+<p>When considering microphones there are really two classes of microphones, Dynamic and Condenser. Dynamic microphones are generally not &#8220;powered&#8221;. Traditionally they have a more narrow frequency range (the range of frequency in which they can accurately capture sound). Condenser microphones on the other hand generally require a small voltage (typically referred to as &#8220;Phantom Power&#8221;), and CAN, but do not always have a wider frequency range. A few words of caution. I&#8217;ve heard people say that they prefer a Dynamic microphone because it doesn&#8217;t pick up some of the background noise in the room. First, get rid of the background noise. Second, this is similar to saying that you prefer using overly compressed JPG&#8217;s so you can&#8217;t see the poorly lit photo. A Dynamic microphone generally cannot capture the extreme high end of the human capacity for hearing too well. As a result it may seem like you are getting &#8220;less&#8221; noise. In reality you would get the same effect by using an equalizer and turning down most of the high end (what would equate to treble on you car stereo).</p>
+
+
+
+
+<p>While there are always exceptions, generally vocals will sound more natural via a good condenser microphone. While top end professional condenser microphones can easily run into the thousands of dollars, there are a lot of decent condenser microphones in the $200 - $300 dollar range. I&#8217;ve used lots of microphones in my days. For myself, I have settled on a <a href="http://www.rodemic.com/mics/nt1-a">Rode NT1-A</a>. These days you can get an NT1-A for around $230.</p>
+
+
+
+
+<h2 id="levels">Levels</h2>
+
+
+
+
+<p>Both Dynamic and Condenser microphones produce a &#8220;mic level&#8221; signal. This isn&#8217;t actually a strong enough signal for us to record with typical equipment. In order to get microphone levels to a standard level, you need to run the output of the microphone into a &#8220;Pre-Amp&#8221;. A microphone pre-amp will boost the signal to appropriate levels to be recorded, known as &#8220;line-level&#8221;.</p>
+
+
+
+
+<p>One of the main issues with recordings I hear on the web involve a bad environment, coupled with low audio levels. The issue generally goes like this: You record something, but your audio level is too low. So you go into your favorite editor and &#8220;Normalize&#8221; the audio. This brings up the audio level to the highest possible without clipping the signal. But, to your dismay it also brings up all types of hums, hisses, and other audio nasties that were previously not heard&#8230; What to do.</p>
+
+
+
+
+<p>The answer to this dilemma is to record audio as &#8220;hot&#8221; as possible. You want to have your input level on your recording device (your computer, or other recorder) be as close to max as possible without clipping. This is tricky, the human voice is a dynamic instrument. It is easy to get louder as you get excited.</p>
+
+
+
+
+<p>My advice is to use an analog compressor. There are lots of pre-amps that have an analog compressor built in. In previous years I&#8217;ve owned all types of pre-amp / compressors. In the end I have settled for a simple device by <a href="http://www.joemeek.com/index.html">Joe Meek</a>&#8230; You&#8217;ll have to excuse the site, they are audio engineers, not designers. It turns out they no longer make the version I have, but it&#8217;s closest cousin would be the <a href="http://www.joemeek.com/threeq.html">threeQ</a>.</p>
+
+
+
+
+<h3 id="whatsacompressor">What&#8217;s a Compressor</h3>
+
+
+
+
+<p>In audio engineering terms a compressor is an audio processor that limits the rate of increase for a sound once the sound crosses a specified level. There are a few parameters that compressors use. A &#8220;threshold&#8221; is a signal strength value. The compressor will begin operating on audio once the level is greater than the threshold. Compressors also have a &#8220;ratio&#8221;. A compression ratio of 4:1 says that for every 4dB (dB stands for Decibel, and is a unit of signal strength in audio) only allow the signal to actually increase by 1dB. Most compressors will also allow you to adjust two more parameters &#8220;attack&#8221; and &#8220;release&#8221;. Compression attack is simply how fast you want the compressor to kick in once the threshold is crossed, and release is how quickly you would like the compressor to return to non-compression once the audio drops below the threshold. Not overly complicated right? </p>
+
+
+
+
+<h3 id="whyusecompression">Why use Compression</h3>
+
+
+
+
+<p>So earlier we talked about how getting the highest audio level without clipping the audio was paramount to creating a good recording. Human vocals are quite dynamic and it is easy for us to get loud enough to cause havoc on the recording system. So we compress the microphone output. This allows the audio level to stay a bit more contained, and allows us to turn up the input level on the recorder to get the best quality. Most professional vocal recordings you have ever heard are extremely compressed. You have to be a really skilled vocalist to convince an audio engineer that some compression isn&#8217;t required. When done right it will actually thicken up the vocal sound a bit.</p>
+
+
+
+
+<p>This is why I believe you shouldn&#8217;t use a popular USB microphone. USB microphones contain the transducer (microphone), the pre-amp and the Analog-To-Digital converter. As such there is no way to compress the audio signal before it is being converted to digital. This results in not getting the best level possible, and the eventual &#8220;Normalize&#8221; process which makes everything louder, including the noise floor. In theory you can use some audio software to compress audio after it has been recorded. In my experience this just makes recording video more painful. It requires you to rip the audio from the video, process the audio, and then re-sync the audio back to the video. Not to mention you have already solidified the noise floor.</p>
+
+
+
+
+<h3 id="thelastwordonlevels">The last word on levels</h3>
+
+
+
+
+<p>When you start working with multiple parts (microphones, pre-amps, compressors, etc), it is important that you maintain an appropriate level through-out your signal chain. Allowing levels to be low on the pre-amp only to bump them up in the compressor will result in unwanted noise. Watch your meters and make sure you have appropriate level though-out the signal chain.</p>
+
+
+
+
+<h2 id="conversion">Conversion</h2>
+
+
+
+
+<p>If you&#8217;ve follow my advise thus far, you still need something to do the analog-to-digital conversion and record the audio. I have been using Mac computers for a long time now. Over the years my analog line input to my Mac has always been suitable for podcast / screencast quality. I simply plug the output of my pre-amp / compressor to the line input on my Mac. If you are on a machine where this is inadequate (I remember having a PC with a cheap &#8220;Soundblaster&#8221; audio card that was awful!), I would consider buying a small audio interface. I&#8217;ve had good luck with <a href="http://www.m-audio.com/">M-Audio</a> in the past, but honestly haven&#8217;t had the need for a sound card for a while (thanks Apple!). I let my Mac do the ADC, and record the audio.</p>
+
+
+
+
+<h2 id="takeaways">Take Aways</h2>
+
+
+
+
+<p>So&#8230; record in a room that has as much acoustical treatment as you are comfortable with (from blankets to acoustical foam), the more the better. Use a decent condenser microphone and run it through a pre-amp that has a compressor. Make sure that your recording device is getting the highest signal possible without clipping the input.</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/05/31/grep-exclude-directory/">Grep Exclude Directory</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-05-31T13:47:00-06:00" pubdate data-updated="true">May 31<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>This is more as a reference for me than anything. I cannot seem to ever remember how to exclude a directory when doing a recursive grep so here we go:</p>
+
+<pre>
+<code>
+grep /some_pattern/ /search/path -irn --exclude-dir=log --color
+</code>
+</pre>
+
+
+<p>-i => case insensitive
+-r => recursive
+-n => show line number
+&mdash;color => highlight the match
+&mdash;exclude-dir => don&rsquo;t search in this path</p>
+
+<p>For multiple excludes use &mdash;exclude-dir={dir1,dir2}</p>
+
+<p>I&rsquo;m mostly hoping that the act of typing this out will help it stick. Perhaps it&rsquo;ll help you as well.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/21/debugging-ruby-with-pry/">Debugging Ruby With Pry</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-21T14:02:00-07:00" pubdate data-updated="true">Jan 21<span>st</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I have gotten this question a few times over the last few weeks (we have several developers starting to explore ruby at work). I put together a video today on debugging ruby using <a href="https://github.com/pry/pry">pry</a> and <a href="https://github.com/nixme/pry-debugger">pry-debugger</a>. I thought I&rsquo;d share it here as well.</p>
+
+<iframe src="http://player.vimeo.com/video/57863917?title=0&amp;byline=0&amp;portrait=0" width="700" height="438" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p>I figure if nothing else, I&rsquo;ll have a place to point people should / when the question arises again.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2013/01/16/javantas-for-quick-java-projects/">Javantas for Quick Java Projects</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2013-01-16T21:38:00-07:00" pubdate data-updated="true">Jan 16<span>th</span>, 2013</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>In the not so distant past I made a decision that I wanted to really force myself to get overly comfortable and proficient with vim. I took the plunge. I had a tough time at first, but as I look back, I&rsquo;m really glad I did it. I really enjoy vim. I realize there are other great options as well. I&rsquo;m not against others having their opinions on editors (or even IDE&rsquo;s for that matter). But for me, I&rsquo;m glad I made the jump.</p>
+
+<p>I&rsquo;ve started in on a course that is requiring us to write Java. The natural choice then is to go back to using Eclipse. I&rsquo;m really comfortable with Eclipse, and recognize the power that it brings. But&hellip; I keep believing that I can get it all done just as quickly using the shell and vim. Add in <a href="https://github.com/msanders/snipmate.vim">snipmate</a>, <a href="https://github.com/wincent/Command-T">Command T</a> and the ability to write some shell scripts, and I think I&rsquo;ll be happy sticking with vim.</p>
+
+<p>So this afternoon I took some time to build <a href="https://github.com/knomedia/javantas">javantas</a> a shell script that handles some of the cruft of starting a small java project.</p>
+
+<div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
+  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2013/01/javantas_intro.jpg' width='700' height='525' >
+    <source src='http://knomedia.com/blog/wp-content/uploads/2013/01/javantas_intro.mp4' type='video/mp4' />
+  </video>
+</div>
+
+
+<p>Give it a spin from the <a href="https://github.com/knomedia/javantas">Github Repo</a>.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/26/introducing-yesman/">Introducing Yesman</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-26T12:55:00-07:00" pubdate data-updated="true">Nov 26<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>My quest to go all-in with vim continues to make progress. This progress was held up a bit with my recent work on C++ within the university. With all the cruft that surrounds C++ development a full featured IDE seemed tempting. So over the Thanksgiving break I spent some time working on yesman (available at <a href="https://github.com/knomedia/yesman">GitHub</a>). Yesman is a command line application that will create and manage your C++ projects including unit testing. It will create a project, download and compile <a href="http://code.google.com/p/googletest/">Google Test</a>, and help you stub out C++ classes, headers and testing fixtures.</p>
+
+
+
+
+<div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
+  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_poster.png' width='700' height='437' >
+    <source src='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_introduction.mp4' type='video/mp4' />
+  </video>
+</div>
+
+
+
+
+<p>It is not quite finished. Future versions of yesman will include a system that allows you to build your c++ project through yesman using a managed make build process. Feel free to fork, tweak give feedback at the <a href="https://github.com/knomedia/yesman">GitHub repo</a></p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/16/using-google-test-framework/">Using Google Test Framework</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-16T11:35:00-07:00" pubdate data-updated="true">Nov 16<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&#8217;ve been sharpening up the C++ lately. I have found it interesting that there does not seem to be a de-facto unit testing library. There are <a href="http://en.wikipedia.org/wiki/List_of_unit_testing_frameworks#C.2B.2B">plenty of options</a> to choose from. I have decided to run with <a href="http://code.google.com/p/googletest/">Google Test</a> if for no other reason than it seems to be somewhat active and updated. I put together a quick pair of screen casts that walk through getting started with Google Test. I&#8217;m using a Mac running Lion (10.8.2) at this time, but believe these directions should be the same for most linux builds.</p>
+
+
+
+
+<p>Enjoy</p>
+
+
+
+
+<h3>Downloading and compiling Google Test</h3>
+
+
+
+
+<iframe src="http://player.vimeo.com/video/53690757?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/53690757">Compiling the Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+
+<h3>Using Google Test</h3>
+
+
+
+
+<iframe src="http://player.vimeo.com/video/53690756?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="401" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/53690756">Using Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/11/12/balancing-higher-ed-and-craftsmanship/">Balancing Higher Ed and Craftsmanship</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-11-12T13:28:00-07:00" pubdate data-updated="true">Nov 12<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>It&rsquo;s no secret that I have arranged some things in my life to go back to school while continuing to work full time as a remote developer. I am quite grateful for the opportunity to do so. It was no small effort. I have a wonderful wife and a flexible work situation that have made it possible. Generally, when I explain to folks that I am going back to school, I am greeted with an interesting look and a simple question &ldquo;Why?&rdquo;. It is a completely valid question.</p>
+
+<p>Most of my programming understanding has come through books, reading, and most importantly watching and doing. I&rsquo;ve made plenty of mistakes over the years and I believe I have learned a good deal from them. I have gone through what I believe is the typical back-and-forth of &ldquo;I&rsquo;m a pretty good programmer&rdquo;, to &ldquo;I&rsquo;m an idiot&rdquo;, and then back. When the opportunity to dedicate a substantial amount of time towards becoming a better programmer arose, I took it. I am too much of a realist (hopefully not too cynical) to believe that somehow putting forth effort in a traditional computer science program will somehow transform me into a software craftsman. I do however believe that in higher education we should be promoting the same values that the craftsman holds true. More on this in a minute.</p>
+
+<p>This morning I walked through the 18 degree Fahrenheit snow and ice to get to campus. As I often do, I was listening to a podcast during my walk. In this case it was the <a title="Ruby Rogues episode 78" href="http://rubyrogues.com/078-rr-hexagonal-rails-with-matt-wynne-and-kevin-rutherford/" target="_blank">Ruby Rogues episode 78</a> . (As a quick aside, I really like the Ruby Rogues. It is informative and funny with just the right amount geek. Whether you write Ruby or not, it is a great podcast for web developers.) Anyway, so in this episode they are talking about Hexagonal Rails applications. They get into a small geek spat over the approach and the Active Record pattern as a whole (geek spats are perfectly healthy in my opinion). The discussion lead me off on a mental tangent about craftsmanship. One of the main attractors for me to the Ruby world is, what from my perspective feels like, a community effort to lift the craftsmanship level of the community. I realize that there are plenty of folks writing bad Ruby as well. Heck, when I look back at code I&rsquo;ve written I feel like I&rsquo;m one of them! By in large however, I feel that the Ruby community embraces this notion of software craftsmanship.</p>
+
+<p>So back to my current situation. I am sitting through a few CS undergrad courses in order for the university to admit me into the post-graduate Computer Science program (my current under-grad degree is in Art &amp; Design which &ldquo;no worky&rdquo; for the university&hellip;). I am learning a lot. So far it is mainly low level stuff that most pretend to get, but often have never really done. I&rsquo;m writing assembly (which I&rsquo;m convinced is good only as a rite-of-passage). I&rsquo;m building the classical data structures (stacks, queues, trees, maps etc). Truthfully, it is a blast. The material isn&rsquo;t overly complicated. The professors do a decent job. It is fun&hellip; in a nerdy way. But it isn&rsquo;t perfect. There is something missing. Craftsmanship and passion for writing good software is difficult to find in higher education. Don&rsquo;t get me wrong. There is passion and well intentioned professors who are putting forth their best effort. Generally however, the passion seems pedantically focused on minutia that typically feels irrelevant to the objective of building great software.</p>
+
+<p>I think this craftsmanship gap is easy to fall into for academics. When you only discuss concepts for 50 minutes a day, three days a week, it becomes difficult to incorporate. Furthermore, in such a setting you are rarely ever forced to maintain or update your code, as such the need for well designed interactions fades. If the software you are writing never reaches a particular scale, as is often the case in under grad classrooms, it is an easy trap to fall into where you begin to question what value there is in design, unit testing, TDD, code reviews, peer programming, etc. As such you rarely hear about such things. Such things are relegated to a quick discussion of &ldquo;you may hear of these things after graduation&rdquo;. This is a mistake. I understand that in most higher education settings your input is a group of students who may have never programmed. I also recognize how difficult teaching programming to a blank slate can be (I had the privilege of teaching introductory OO concepts for several years at a private university). By not instilling a sense of passion about the quality of code a student writes, we are setting students down the wrong path. A path were the only metric of code quality becomes if the program &ldquo;works&rdquo;, is a path of re-living the mistakes of decades worth of experience of prior developers. There must be a balance between classical classroom theory and pragmatic battle tested approach and design.</p>
+
+<p>This isn&rsquo;t a new dilemma. The difference in approach between the apprentice and classically educated has been around for some time. I find it interesting that as a society we have yet to recognize the need for a dual headed approach. An approach in which we blend the real world nature of the apprentice with the theory of the classroom clearly has merit. Yet, as is often the case, we seem to divide off into our two corners of the world to assume there is no merit in the other approach. Hopefully someday we will figure out how to balance these two approaches. Both have a measure of validity along with numbers to show their success.</p>
+
+<p>So people do indeed ask why I&rsquo;m going back to school. Truthfully I am doing it to ensure that I have experienced both approaches. I believe that the systems we use and design will only get more complicated. I don&rsquo;t believe that I&rsquo;ll get everything I need from a classic education. I am hoping to balance a life&rsquo;s worth of lessons, passion, and attempts at craftsmanship with the theory and low level understanding of classical computer science.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/09/25/create-the-web-thoughts/">Create the Web Thoughts</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-25T19:57:00-06:00" pubdate data-updated="true">Sep 25<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I just got back from Adobe&#8217;s Create The Web event in San Francisco. I am excited about Adobe&#8217;s direction and what they are up to. If you haven&#8217;t already seen it, you should check it out. They have put the <a href="http://html.adobe.com/events/">keynote video</a> up and it gives a good overview of what was talked about all day. In short, I really like that Adobe is taking a shot with open source software. This isn&#8217;t the easiest route to deliver a product but I think it helps to engage the community. More importantly I think it is a great way to get feedback from actual users who care about the product.</p>
+
+
+
+
+<p>I left the event feeling inspired that Adobe is heading in the right direction with the new <a href="http://html.adobe.com/">Adobe Edge product line</a>. I hope that tools like Reflow have the ability to make a big difference in moving to responsive designs. I really like the inline editing and live reloading features of Brackets. Inspect (previously Shadow) is also a good focused product.</p>
+
+
+
+
+<p>This was another aspect that I appreciate about the Edge line. Rather than attempting to make one big super tool, Adobe is making smaller focused tools for specific tasks. This will allow folks to use the tooling where they are helpful, but not require a complete rethinking of how you are comfortable working today.</p>
+
+
+
+
+<p>Lastly, there is something exciting about web tools that are being built with web standards. There is something about a set of tools that is built by folks who are also writing web standards, that output files as web standards that feels right.</p>
+
+
+
+
+<p>All in all I was really impressed by Adobe yesterday. I think they are finally hitting their stride in their move to support web and open standards.</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2012/07/12/change-of-pace/">Change of Pace</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-07-12T16:48:00-06:00" pubdate data-updated="true">Jul 12<span>th</span>, 2012</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>I&rsquo;ve worked in the Higher Education space for the last 9 years. It has been fun, rewarding and challenging. My role over the years has been in a constant state of change. I started as a Lab Specialist, working one on one with students as they worked through activities and lab work. I moved on as a full time instructor for several years where I gave long lectures. I quickly realized however that long lectures don&rsquo;t work, and moved on to lots of short lectures with scattered activities and assessments. For the last two years I have worked in an education management role where I get to work out how we approached our students development and education from a higher level.</p>
+
+<p>After this week however things will change. I am moving away from my existing management position within the faculty / education team. There is a world of challenges ahead of the education community, specifically surrounding the asynchronous learning model that is inherent in online education. I am convinced that the future of higher education will be found within the online world. The world will keep evolving and education needs to evolve with it.</p>
+
+<p>So I am excited to be joining our internal software development team as we reboot and focus on utilizing and building technology to overcome many of the challenges that face educators. I have been wanting to get back to a place where my work was more focused on development. At the same time I have really enjoyed working at the university. The opportunity to focus on these challenges seems perfect for me as it allows me to continue to be involved in education at the university, while spending a good portion of my day writing code.</p>
+
+<p>I&rsquo;m excited for the future.</p>
+</div>
+  
+  
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+    
+      <h1 class="entry-title"><a href="/blog/2011/12/22/thoughts-on-languages-%26-technologies/">Thoughts on Languages & Technologies</a></h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-22T11:01:00-07:00" pubdate data-updated="true">Dec 22<span>nd</span>, 2011</time>
+        
+      </p>
+    
+  </header>
+
+
+  <div class="entry-content"><p>Over the last few weeks (has it already been over a month?) the web world has been abuzz regarding technology mostly surrounding Adobe&#8217;s ill planned announcements surrounding Flash Player, HTML5, and Flex. What is best, what should be killed off? Why this technology is &#8216;better&#8217; than that technology&#8230; We might as well work in some type of ministry as much as people get dogmatic about the technology choices they make. I recognize there are business decisions to be made. You need to be able to look your client in the eye and tell them that you are helping them make appropriate choices for their projects. You don&#8217;t however need to be blindingly loyal to any specific technology. They all have their strengths and weakness. Having said that, I have enjoyed my time working with Flex. It solves some interested challenges for web development. It also creates a few others.</p>
+
+
+
+
+<p>Here are a few thoughts. First, if this snuck up on you then you have simply not been paying attention over the last few years. Once Jobs put out his &#8220;Thoughts on Flash&#8221; article, and Adobe fumbled their response, the writing has been on the wall for the Flash Player on mobile. The idea that somehow Apple would cave and someday support Flash Player on iOS has never seemed feasible to me.</p>
+
+
+
+
+<p>It might be time for some of us to &#8220;double down&#8221; on reality. Flash Player isn&#8217;t inherently evil, Neither is JavaScript. Best practices for today&#8217;s JavaScript applications are not the same as it was 7 years ago when you last fought with it. To that end, ActionScript has grown up a lot since some of you stopped playing with it in ActionScript 1. Think you are too good, advanced, or &#8220;too OOP&#8221; for JavaScript? Please. If you are that great go help build the JavaScript community. Build frameworks and abstractions that make the language what you think it needs to be. There are plenty of smart people already doing that. Go join them.</p>
+
+
+
+
+<p>There are plenty of Flash / Flex applications that could have been built with web standards technology. Are there pain points? For sure. Does Flex make it easier? Absolutely. The cold reality however is that you can&#8217;t count on Flash Player being available on mobile. Users are increasingly loading web content on mobile devices. Will you build your web application twice? Once with Flex for desktops, and again with web standards for mobile? I&#8217;m guessing not.</p>
+
+
+
+
+<p>I have always loved the Flash / Flex community. There are some incredibly smart, talented developers in this community. I believe that Flex development will be around for a while to come. There are too many companies heavily invested in it to simply turn away. To that end, I am interested in what the community will do with the new (assuming it gets accepted) Apache Flex.</p>
+
+
+
+
+<p>Do yourself a favor this upcoming year. Learn a new language. There are plenty of powerful languages to choose from. They all have merit. At the end of the day you will be a better programmer for having picked up something new. You can always go back to being religiously loyal to your language of choice after you have expanded your horizons. Who knows you may just find a new language to become dogmatic about.</p>
+
+</div>
+  
+  
+
+
+    </article>
+  
   <div class="pagination">
     
     <a href="/blog/archives">Blog Archives</a>
@@ -78,7 +727,56 @@
   <h1>Recent Posts</h1>
   <ul id="recent_posts">
     
+      <li class="post">
+        <a href="/blog/2013/09/28/capturing-good-audio/">Capturing Good Audio</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/05/31/grep-exclude-directory/">Grep Exclude Directory</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/21/debugging-ruby-with-pry/">Debugging Ruby With Pry</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2013/01/16/javantas-for-quick-java-projects/">Javantas for Quick Java Projects</a>
+      </li>
+    
+      <li class="post">
+        <a href="/blog/2012/11/26/introducing-yesman/">Introducing Yesman</a>
+      </li>
+    
   </ul>
+</section>
+
+<section>
+  <h1>GitHub Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Status updating&#8230;</li>
+  </ul>
+  
+  <a href="https://github.com/knomedia">@knomedia</a> on GitHub
+  
+  <script type="text/javascript">
+    $(document).ready(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: 'knomedia',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
 </section>
 
 
@@ -91,7 +789,7 @@
     </div>
   </div>
   <footer role="contentinfo"><p>
-  Copyright &copy; 2013 - Your Name -
+  Copyright &copy; 2013 - Jason Madsen -
   <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
 </p>
 
