@@ -1,0 +1,17 @@
+---
+layout: post
+title: "360 | Flex Camp NJ"
+date: 2008-09-24 12:16
+published: false
+footer: true
+comments: false
+categories: flex
+---
+
+<img src="http://knomedia.com/blog/wp-content/uploads/2008/09/95.png" alt="" title="95" width="128" height="128" class="alignleft size-full wp-image-106" />I'm heading to the Garden State this weekend to attend 360 | Flex Camp New Jersey, and the Farata Systems Flex training.  I'm looking forward to the two day event.  I missed out on going to San Jose this year, I figure this is the next best thing.
+
+I'm looking forward to the sessions of Fluint, and also Drupal.  Both of which I keep hearing about, but have yet to work with.
+
+For more details visit <a href="http://www.360conferences.com/360flexcamp/">http://www.360conferences.com/360flexcamp/</a>
+
+-jason

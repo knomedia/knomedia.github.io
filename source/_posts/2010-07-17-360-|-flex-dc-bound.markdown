@@ -1,0 +1,13 @@
+---
+layout: post
+title: "360 | Flex DC bound"
+date: 2010-07-17 15:20
+published: false
+footer: true
+comments: false
+categories: 
+---
+
+<img class="alignnone" style="float: left;" title="360 Flex DC" src="http://www.knomedia.com/blog/wp-content/uploads/2010/07/site_badge.png" alt="360 Flex DC" width="160" height="168" />I'm real geeked up to be heading to 360 | Flex DC this year.  Should be a great time.  Plenty of great speakers, building with the community etc... There are still ( at the time of this post ) early bird tickets.  You know you'll end up going.  You might as well save a few bucks and <a href="http://bit.ly/975ovk&gt;">get your tickets now</a>.
+
+UPDATE:  Looks like the early bird tickets are now sold out, but for the money, it's still the best Flex conference around.  Go <a href="http://bit.ly/975ovk&gt;">get your tickets</a>!
