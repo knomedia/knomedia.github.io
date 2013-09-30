@@ -8,6 +8,8 @@ comments: false
 categories: [audio, podcasts, screencasts, video]
 ---
 
+Note: I wrote this about a year ago. During my transition to octopress, I realized I never published it... So here it is.
+
 <p>I really enjoy listening to good podcasts (lately I've been listening to <a href="http://rubyrogues.com/">Ruby Rogues</a> and <a href="http://javascriptjabber.com/">JavaScript Jabber</a> a lot), or watching good screencasts. Over the years while teaching at a university I have recorded, and re-recorded hours and hours worth of videos for students to use as reference material. While these days I mostly hang out with tech geeks, there was a former life in which I lived in L.A. and worked as a recording engineer. In my life I have had access to some of the greatest recording gear the world has thus far produced. I&#8217;ve also worked on budget projects at home that turned out sounding great. I thought (with a little nudging from <a href="http://twitter.com/#!/olivierlacan/status/207303724710895616">@olivierlacan</a>) that I should write up a bit about getting great audio for your podcast, screencast, video, etc.</p>
 
 <p>There are, in my book, four elements to getting great sounds recorded&#8230; Audio Source, Environment, Input and Levels. In this post I&#8217;ll describe a little about each and hopefully set you on your way to audio recording bliss.</p>
