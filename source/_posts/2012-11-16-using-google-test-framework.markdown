@@ -14,8 +14,8 @@ categories: [c, google-test, gtest, video]
 
 <h3>Downloading and compiling Google Test</h3>
 
-<iframe src="http://player.vimeo.com/video/53690757?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/53690757">Compiling the Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+{% vimeo 53690757 %}
 
 <h3>Using Google Test</h3>
 
-<iframe src="http://player.vimeo.com/video/53690756?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="401" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe> <p><a href="http://vimeo.com/53690756">Using Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+{% vimeo 53690756 %}
