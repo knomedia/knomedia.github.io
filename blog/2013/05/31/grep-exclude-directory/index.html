@@ -93,20 +93,27 @@
 
 <div class="entry-content"><p>This is more as a reference for me than anything. I cannot seem to ever remember how to exclude a directory when doing a recursive grep so here we go:</p>
 
-<pre>
-<code>
-grep /some_pattern/ /search/path -irn --exclude-dir=log --color
-</code>
-</pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>grep /some_pattern/ /search/path -irn --exclude-dir<span class="o">=</span>log --color
+</span></code></pre></td></tr></table></div></figure>
 
 
-<p>-i => case insensitive
--r => recursive
--n => show line number
-&mdash;color => highlight the match
-&mdash;exclude-dir => don&rsquo;t search in this path</p>
 
-<p>For multiple excludes use &mdash;exclude-dir={dir1,dir2}</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>-i <span class="o">=</span>&gt; <span class="k">case </span>insensitive
+</span><span class='line'>-r <span class="o">=</span>&gt; recursive
+</span><span class='line'>-n <span class="o">=</span>&gt; show line number
+</span><span class='line'>--color <span class="o">=</span>&gt; highlight the match
+</span><span class='line'>--exclude-dir <span class="o">=</span>&gt; don<span class="err">&#39;</span>t search in this path
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>For multiple excludes use <code>--exclude-dir={dir1,dir2}</code></p>
 
 <p>I&rsquo;m mostly hoping that the act of typing this out will help it stick. Perhaps it&rsquo;ll help you as well.</p>
 </div>

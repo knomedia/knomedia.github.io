@@ -4,7 +4,7 @@
   <title><![CDATA[Category: ruby | nothing yet | knomedia]]></title>
   <link href="http://knomedia.github.io/blog/categories/ruby/atom.xml" rel="self"/>
   <link href="http://knomedia.github.io/"/>
-  <updated>2013-10-11T13:36:45-06:00</updated>
+  <updated>2013-10-15T15:21:11-06:00</updated>
   <id>http://knomedia.github.io/</id>
   <author>
     <name><![CDATA[Jason Madsen]]></name>
@@ -18,12 +18,16 @@
     <link href="http://knomedia.github.io/blog/2013/01/21/debugging-ruby-with-pry/"/>
     <updated>2013-01-21T14:02:00-07:00</updated>
     <id>http://knomedia.github.io/blog/2013/01/21/debugging-ruby-with-pry</id>
-    <content type="html"><![CDATA[<p>I have gotten this question a few times over the last few weeks (we have several developers starting to explore ruby at work). I put together a video today on debugging ruby using <a href="https://github.com/pry/pry">pry</a> and <a href="https://github.com/nixme/pry-debugger">pry-debugger</a>. I thought I&rsquo;d share it here as well.</p>
+    <content type="html"><![CDATA[<p>I have gotten this question a few times over the last few weeks (we have
+several developers starting to explore ruby at work). I put together a video
+today on debugging ruby using <a href="https://github.com/pry/pry">pry</a> and
+<a href="https://github.com/nixme/pry-debugger">pry-debugger</a>. I thought I&rsquo;d
+share it here as well.</p>
 
-<iframe src="http://player.vimeo.com/video/57863917?title=0&amp;byline=0&amp;portrait=0" width="700" height="438" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<p><div class="embed-video-container"><iframe src="http://player.vimeo.com/video/57863917 "></iframe></div></p>
 
-
-<p>I figure if nothing else, I&rsquo;ll have a place to point people should / when the question arises again.</p>
+<p>I figure if nothing else, I&rsquo;ll have a place to point people should / when the
+question arises again.</p>
 ]]></content>
   </entry>
   

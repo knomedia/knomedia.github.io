@@ -4,7 +4,7 @@
   <title><![CDATA[nothing yet | knomedia]]></title>
   <link href="http://knomedia.github.io/atom.xml" rel="self"/>
   <link href="http://knomedia.github.io/"/>
-  <updated>2013-10-11T13:36:45-06:00</updated>
+  <updated>2013-10-15T15:21:11-06:00</updated>
   <id>http://knomedia.github.io/</id>
   <author>
     <name><![CDATA[Jason Madsen]]></name>
@@ -205,20 +205,27 @@ know that I&rsquo;ll miss it.</p>
     <id>http://knomedia.github.io/blog/2013/05/31/grep-exclude-directory</id>
     <content type="html"><![CDATA[<p>This is more as a reference for me than anything. I cannot seem to ever remember how to exclude a directory when doing a recursive grep so here we go:</p>
 
-<pre>
-<code>
-grep /some_pattern/ /search/path -irn --exclude-dir=log --color
-</code>
-</pre>
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>grep /some_pattern/ /search/path -irn --exclude-dir<span class="o">=</span>log --color
+</span></code></pre></td></tr></table></div></figure>
 
 
-<p>-i => case insensitive
--r => recursive
--n => show line number
-&mdash;color => highlight the match
-&mdash;exclude-dir => don&rsquo;t search in this path</p>
 
-<p>For multiple excludes use &mdash;exclude-dir={dir1,dir2}</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>-i <span class="o">=</span>&gt; <span class="k">case </span>insensitive
+</span><span class='line'>-r <span class="o">=</span>&gt; recursive
+</span><span class='line'>-n <span class="o">=</span>&gt; show line number
+</span><span class='line'>--color <span class="o">=</span>&gt; highlight the match
+</span><span class='line'>--exclude-dir <span class="o">=</span>&gt; don<span class="err">&#39;</span>t search in this path
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>For multiple excludes use <code>--exclude-dir={dir1,dir2}</code></p>
 
 <p>I&rsquo;m mostly hoping that the act of typing this out will help it stick. Perhaps it&rsquo;ll help you as well.</p>
 ]]></content>
@@ -229,12 +236,17 @@ grep /some_pattern/ /search/path -irn --exclude-dir=log --color
     <link href="http://knomedia.github.io/blog/2013/01/21/debugging-ruby-with-pry/"/>
     <updated>2013-01-21T14:02:00-07:00</updated>
     <id>http://knomedia.github.io/blog/2013/01/21/debugging-ruby-with-pry</id>
-    <content type="html"><![CDATA[<p>I have gotten this question a few times over the last few weeks (we have several developers starting to explore ruby at work). I put together a video today on debugging ruby using <a href="https://github.com/pry/pry">pry</a> and <a href="https://github.com/nixme/pry-debugger">pry-debugger</a>. I thought I&rsquo;d share it here as well.</p>
+    <content type="html"><![CDATA[<p>I have gotten this question a few times over the last few weeks (we have
+several developers starting to explore ruby at work). I put together a video
+today on debugging ruby using <a href="https://github.com/pry/pry">pry</a> and
+<a href="https://github.com/nixme/pry-debugger">pry-debugger</a>. I thought I&rsquo;d
+share it here as well.</p>
 
-<iframe src="http://player.vimeo.com/video/57863917?title=0&amp;byline=0&amp;portrait=0" width="700" height="438" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/57863917 "></iframe></div>
 
 
-<p>I figure if nothing else, I&rsquo;ll have a place to point people should / when the question arises again.</p>
+<p>I figure if nothing else, I&rsquo;ll have a place to point people should / when the
+question arises again.</p>
 ]]></content>
   </entry>
   
@@ -250,8 +262,8 @@ grep /some_pattern/ /search/path -irn --exclude-dir=log --color
 <p>So this afternoon I took some time to build <a href="https://github.com/knomedia/javantas">javantas</a> a shell script that handles some of the cruft of starting a small java project.</p>
 
 <div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
-  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2013/01/javantas_intro.jpg' width='700' height='525' >
-    <source src='http://knomedia.com/blog/wp-content/uploads/2013/01/javantas_intro.mp4' type='video/mp4' />
+  <video controls='controls' poster='http://knomedia.com/blog_assets/2013/javantas_intro.jpg' width='700' height='525' >
+    <source src='http://knomedia.com/blog_assets/2013/javantas_intro.mp4' type='video/mp4' />
   </video>
 </div>
 
@@ -271,8 +283,8 @@ grep /some_pattern/ /search/path -irn --exclude-dir=log --color
 
 
 <div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
-  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_poster.png' width='700' height='437' >
-    <source src='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_introduction.mp4' type='video/mp4' />
+  <video controls='controls' poster='http://knomedia.com/blog_assets/2012/yesman_poster.png' width='700' height='437' >
+    <source src='http://knomedia.com/blog_assets/2012/yesman_introduction.mp4' type='video/mp4' />
   </video>
 </div>
 
@@ -304,20 +316,18 @@ grep /some_pattern/ /search/path -irn --exclude-dir=log --color
 
 
 
-<iframe src="http://player.vimeo.com/video/53690757?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/53690757 "></iframe></div>
 
 
-<p> <p><a href="http://vimeo.com/53690757">Compiling the Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
+
 
 <h3>Using Google Test</h3>
 
 
 
 
-<iframe src="http://player.vimeo.com/video/53690756?title=0&byline=0&amp;portrait=0&amp;badge=0" width="640" height="401" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+<div class="embed-video-container"><iframe src="http://player.vimeo.com/video/53690756 "></iframe></div>
 
-
-<p> <p><a href="http://vimeo.com/53690756">Using Google Test Framework</a> from <a href="http://vimeo.com/user9615407">Jason Madsen</a> on <a href="http://vimeo.com">Vimeo</a>.</p></p>
 ]]></content>
   </entry>
   

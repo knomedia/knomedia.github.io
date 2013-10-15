@@ -4,7 +4,7 @@
   <title><![CDATA[Category: yesman | nothing yet | knomedia]]></title>
   <link href="http://knomedia.github.io/blog/categories/yesman/atom.xml" rel="self"/>
   <link href="http://knomedia.github.io/"/>
-  <updated>2013-10-11T13:36:45-06:00</updated>
+  <updated>2013-10-15T15:21:11-06:00</updated>
   <id>http://knomedia.github.io/</id>
   <author>
     <name><![CDATA[Jason Madsen]]></name>
@@ -24,8 +24,8 @@
 
 
 <div id='videoContent' style="padding-top:30px; padding-bottom:30px;">
-  <video controls='controls' poster='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_poster.png' width='700' height='437' >
-    <source src='http://knomedia.com/blog/wp-content/uploads/2012/11/yesman_introduction.mp4' type='video/mp4' />
+  <video controls='controls' poster='http://knomedia.com/blog_assets/2012/yesman_poster.png' width='700' height='437' >
+    <source src='http://knomedia.com/blog_assets/2012/yesman_introduction.mp4' type='video/mp4' />
   </video>
 </div>
 
