@@ -23,6 +23,6 @@ miss working with 'em.
 I think (for me anyway), it is easy to let today cloud the long term
 perspective. I'm happy with where I am and where I'm heading today.
 Yesterday's experiences, both good and bad, have helped me get where I am
-today. So I'm coming to grips with notion that it's time to leave, and stil
-know that I'll miss it.
+today. So I'm coming to grips with the notion that it's time to leave, and
+still know that I'll miss it.
 
