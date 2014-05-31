@@ -4,7 +4,7 @@
   <title><![CDATA[nothing yet | knomedia]]></title>
   <link href="http://knomedia.github.io/atom.xml" rel="self"/>
   <link href="http://knomedia.github.io/"/>
-  <updated>2013-10-19T14:28:24-06:00</updated>
+  <updated>2014-05-31T14:39:08-06:00</updated>
   <id>http://knomedia.github.io/</id>
   <author>
     <name><![CDATA[Jason Madsen]]></name>
@@ -12,6 +12,114 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Using ember-cli and sinon]]></title>
+    <link href="http://knomedia.github.io/blog/2014/05/31/using-ember-cli-and-sinon/"/>
+    <updated>2014-05-31T13:19:00-06:00</updated>
+    <id>http://knomedia.github.io/blog/2014/05/31/using-ember-cli-and-sinon</id>
+    <content type="html"><![CDATA[<p>So you know and love the idea of <a href="http://iamstef/ember-cli"><code>ember-cli</code></a>. You also want to use <a href="http://sinonjs.org"><code>sinon</code></a>. ember-cli uses <a href="http://bower.io"><code>bower</code></a> to bring in third party dependencies. At first glance it seems like you could just:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bower install --save sinon
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>It doesn&rsquo;t work</strong>. Read along, or watch the video for details on getting sinon and ember-cli to play together.</p>
+
+<div id='videoContent' style="padding-top:20px; padding-bottom:20px;">
+  <video controls='controls' poster='http://knomedia.com/blog_assets/2014/web_ember-cli-sinon.jpg' width='700' height='525' >
+    <source src='http://knomedia.com/blog_assets/2014/web_ember-cli-sinon.mp4' type='video/mp4' />
+  </video>
+</div>
+
+
+<h3>Bring in sinon via bower</h3>
+
+<p>Turns out if you check the <a href="https://github.com/cjohansen/Sinon.JS">github repo for sinon</a>, you&rsquo;ll notice that the built
+files are not included. Looking at <a href="https://github.com/cjohansen/Sinon.JS/pull/253#issuecomment-14867326">this comment</a>, reveals that the author of sinon would rather not have the built files included in the repo. So fabiosantoscode forked the repo and provides a bower package (<code>sinonjs-built</code>) that provides the built files. This works. I don&rsquo;t really care to have all of the repo in this case. I just want to use the sinon built file, the way I would outside of bower&hellip; So instead I add sinon to my ember-cli app like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>bower install --save <span class="nv">sinon</span><span class="o">=</span>http://sinonjs.org/releases/sinon-1.10.1.js
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This will bring in sinon and place the file at <code>vendor/sinon/index.js</code> within my ember-cli app.</p>
+
+<h3>Include sinon in the broccoli build</h3>
+
+<p>ember-cli uses <a href="https://github.com/broccolijs/broccoli"><code>brocolli</code></a> to build out your ember app. To use sinon we need to make broccoli aware of, and process the sinon files. To do so, we&rsquo;ll need two brocolli plugins. You can install them via <a href="https://www.npmjs.org/"><code>npm</code></a> like so.</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class='bash'><span class='line'>npm install --save-dev broccoli-static-compiler
+</span><span class='line'>npm install --save-dev broccoli-merge-trees
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p><a href="https://github.com/joliss/broccoli-static-compiler"><code>broccoli-static-compiler</code></a> allows you to pick files out of a tree, and optionally move them. We&rsquo;ll use it to move the <code>vendor/sinon/index.js</code> file during the build.</p>
+
+<p><a href="https://github.com/broccolijs/broccoli-merge-trees"><code>broccoli-merge-trees</code></a> allows you to merge broccoli trees together. We&rsquo;ll use it to merge the ember app tree and the new sinon tree (of one lonely sinon file).</p>
+
+<p>Now we need to include and use these modules within the <code>Brocfile.js</code> that ember-cli builds for you. So add in a require statement for both of them:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// Brocfile.js</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">pickFiles</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;broccoli-static-compiler&#39;</span><span class="p">);</span>
+</span><span class='line'><span class="kd">var</span> <span class="nx">mergeTrees</span> <span class="o">=</span> <span class="nx">require</span><span class="p">(</span><span class="s1">&#39;broccoli-merge-trees&#39;</span><span class="p">);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Next lets build a tree for, and move the <code>sinon</code> file during the build. Within the <code>Brocfile.js</code> still, add:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// Brocfile.js</span>
+</span><span class='line'>
+</span><span class='line'><span class="kd">var</span> <span class="nx">sinon</span> <span class="o">=</span> <span class="nx">pickFiles</span><span class="p">(</span><span class="s1">&#39;vendor/sinon&#39;</span><span class="p">,</span> <span class="p">{</span>
+</span><span class='line'>  <span class="nx">srcDir</span><span class="o">:</span> <span class="s1">&#39;/&#39;</span><span class="p">,</span>
+</span><span class='line'>  <span class="nx">files</span><span class="o">:</span> <span class="p">[</span><span class="s1">&#39;index.js&#39;</span><span class="p">],</span>
+</span><span class='line'>  <span class="nx">destDir</span><span class="o">:</span> <span class="s1">&#39;/assets/sinon&#39;</span>
+</span><span class='line'><span class="p">});</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>This tells broccoli to create a tree from <code>vendor/sinon</code> and copy the <code>vendor/sinon/index.js</code> file to <code>assets/sinon/index.js</code> during your build process. Lastly, we need to merge the tree that represents the ember app, and the new tree that we just created for sinon. At the bottom of the <code>Brocfile.js</code> replace the existing <code>module.exports ...</code> with:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class='javascript'><span class='line'><span class="c1">// Brocfile.js</span>
+</span><span class='line'>
+</span><span class='line'><span class="nx">module</span><span class="p">.</span><span class="nx">exports</span> <span class="o">=</span> <span class="nx">mergeTrees</span><span class="p">([</span><span class="nx">app</span><span class="p">.</span><span class="nx">toTree</span><span class="p">(),</span> <span class="nx">sinon</span><span class="p">]);</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>Using sinon in your tests</h3>
+
+<p>So we now have sinon included in our app, and build process. Let&rsquo;s use it in a test. The first step is to include it in the <code>tests/index.html</code> file. Add a script tag like so:</p>
+
+<figure class='code'><figcaption><span></span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class='html'><span class='line'><span class="nt">&lt;script </span><span class="na">src=</span><span class="s">&#39;assets/sinon/index.js&#39;</span><span class="nt">&gt;&lt;/script&gt;</span>
+</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Now fire up the ember server (<code>ember serve</code>) and prove to yourself that sinon is available for your tests by visiting <code>http://localhost:4200/tests</code>, open the console and type <code>sinon</code>.</p>
+
+<p>Last step. In order to use sinon within your tests, open <code>tests/.jshintrc</code> and add sinon to the list of predefined globals. ember-cli executes a JSHint test against each of your files. Trying to use a global (like <code>sinon</code>) without including it here will cause a failing test.</p>
+
+<p>You should be good to go. Mock, stub and spy away within your ember-cli tests.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Saying Goodbye]]></title>
